@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="BookManager:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/BookManager_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="BookManager" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="dom4j-1.6.1" />
+          <element id="library" level="project" name="xstream-1.4" />
+          <element id="library" level="project" name="xmlpull_1_0_5" />
+          <element id="library" level="project" name="commons-collections-3.2" />
+          <element id="library" level="project" name="commons-codec-1.9" />
+          <element id="library" level="project" name="commons-beanutils-1.7.0" />
+          <element id="library" level="project" name="mysql-connector-java" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="BookManager/web/Web" />
+    </root>
+  </artifact>
+</component>

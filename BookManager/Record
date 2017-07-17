@@ -1,0 +1,20 @@
+微信后台标准请求连接：
+
+创建菜单（POST）"https://api.weixin.qq.com/cgi-bin/menu/create?access_token=ACCESS_TOKEN";
+获取用户信息（GET）"https://api.weixin.qq.com/cgi-bin/user/info?access_token=ACCESS_TOKEN&openid=OPENID&lang=zh_CN";
+请求token(GET)"https://api.weixin.qq.com/cgi-bin/token?grant_type=client_credential&appid=APPID&secret=APPSECRET";
+
+
+
+
+微信后台数据管理系统
+1.书籍管理
+    一级菜单：名称：实验室图书。有以下4个二级菜单。
+        ①查看所有书籍；
+            按钮类型：MessageUtils.MESSAGE_EVENT_CLICK。key:btn_1。
+        ②借书；
+            按钮类型：MESSAGE_EVENT_CLICK_scancode_waitmsg。key:btn_2
+        ③还书；
+            按钮类型：MESSAGE_EVENT_CLICK_scancode_waitmsg。key:btn_3
+        ④管理员确认；
+            按钮类型：MESSAGE_EVENT_CLICK_scancode_waitmsg。key:btn_4
